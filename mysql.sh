@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source ./common.sh
+app_name=mysql
 root_setup
 
 echo "Please enter root password to setup"

@@ -1,7 +1,6 @@
 #!/bin/bash
 
 source ./common.sh
-
 root_setup
 
 dnf module disable nginx -y &>>$LOG_FILE
