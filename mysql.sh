@@ -3,8 +3,8 @@
 source ./common.sh
 root_setup
 
-mkdir -p $LOGS_FOLDER
-echo "script started executing at: $(date)" | tee -a $LOG_FILE
+echo "Please enter root password to setup"
+read -s MYSQL_ROOT_PASSWORD
 
 dnf install mysql-server -y &>>$LOG_FILE
 VALIDATE $? "Installing mysql server"
